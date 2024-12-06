@@ -35,9 +35,9 @@ func main() {
 
 	// List of users to insert
 	users := []map[string]interface{}{
-		{"name": "Ahmet", "email": "ahmet@example.com", "age": 30, "active": true},
-		{"name": "Mehmet", "email": "mehmet@example.com", "age": 28, "active": true},
-		{"name": "Ayşe", "email": "ayse@example.com", "age": 25, "active": false},
+		{"name": "John", "email": "john@example.com", "age": 30, "active": true},
+		{"name": "Michael", "email": "michael@example.com", "age": 28, "active": true},
+		{"name": "Sarah", "email": "sarah@example.com", "age": 25, "active": false},
 	}
 
 	// Insert multiple users with auto-generated IDs
@@ -56,8 +56,8 @@ func main() {
 	// Update a specific user using one of the generated IDs
 	documentIDToUpdate := documentIDs[0] // First inserted document
 	updatedData := map[string]interface{}{
-		"name":   "Ahmet Updated",
-		"email":  "ahmet_updated@example.com",
+		"name":   "John Updated",
+		"email":  "john_updated@example.com",
 		"age":    31,
 		"active": true,
 	}
